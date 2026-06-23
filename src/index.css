@@ -125,3 +125,31 @@ html, body {
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--line2); border-radius: 3px; }
+
+/* ============ Responsive ============ */
+/* Tablet & below — collapse the main two/three-column layouts to a single column.
+   These rules use !important to override the inline grid-template-columns. */
+@media (max-width: 920px) {
+  .mm-collapse { grid-template-columns: 1fr !important; gap: 30px !important; }
+  .mm-exp { grid-template-columns: 1fr !important; gap: 16px !important; }
+  .mm-minerva-grid { grid-template-columns: 1fr !important; min-height: 0 !important; }
+  .mm-stack-divider { border-right: none !important; border-bottom: 1px solid var(--line) !important; }
+}
+
+/* Large phone — 3-up card grids and the stats strip reflow */
+@media (max-width: 760px) {
+  .mm-3col { grid-template-columns: 1fr !important; }
+  .mm-2col { grid-template-columns: 1fr !important; gap: 24px !important; }
+  .mm-impact { grid-template-columns: 1fr 1fr !important; }
+}
+
+/* Small phone — tighten outer padding and section rhythm */
+@media (max-width: 600px) {
+  .mm-main { padding-left: 18px !important; padding-right: 18px !important; }
+  .mm-section { padding-top: 58px !important; padding-bottom: 58px !important; }
+  .mm-impact { grid-template-columns: 1fr 1fr !important; }
+  .mm-impact > div { padding: 22px 18px !important; }
+  /* Card headers: let title + subtitle wrap instead of squeezing the title */
+  .mm-card-head-left { flex-wrap: wrap !important; gap: 2px 12px !important; }
+  .mm-card-head-left h3 { white-space: nowrap; }
+}

@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <section id="contact" style={{ padding: '96px 0 60px', borderTop: '1px solid var(--line)' }}>
+    <section id="contact" className="mm-section" style={{ padding: '96px 0 60px', borderTop: '1px solid var(--line)' }}>
       <div style={{ display: 'flex', alignItems: 'baseline', gap: 14, marginBottom: 40 }}>
         <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 12, color: 'var(--accent)' }}>09</span>
         <h2 data-reactive style={{ fontWeight: 600, fontSize: 'clamp(28px,3.4vw,40px)', letterSpacing: '-.02em', margin: 0 }}>Contact</h2>

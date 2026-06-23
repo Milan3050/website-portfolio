@@ -2,7 +2,7 @@ import Minerva from './Minerva'
 
 export default function Projects() {
   return (
-    <section id="projects" style={{ padding: '84px 0', borderTop: '1px solid var(--line)' }}>
+    <section id="projects" className="mm-section" style={{ padding: '84px 0', borderTop: '1px solid var(--line)' }}>
       <div style={{ display: 'flex', alignItems: 'baseline', gap: 14, marginBottom: 16 }}>
         <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 12, color: 'var(--accent)' }}>03</span>
         <h2 data-reactive style={{ fontWeight: 600, fontSize: 'clamp(28px,3.4vw,40px)', letterSpacing: '-.02em', margin: 0 }}>Projects</h2>
@@ -15,14 +15,14 @@ export default function Projects() {
       {/* Reli AI */}
       <article className="mm-card reveal" style={{ border: '1px solid var(--line)', borderRadius: 14, overflow: 'hidden', marginBottom: 22 }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '20px 26px', borderBottom: '1px solid var(--line)' }}>
-          <div style={{ display: 'flex', alignItems: 'baseline', gap: 14 }}>
+          <div className="mm-card-head-left" style={{ display: 'flex', alignItems: 'baseline', gap: 14 }}>
             <h3 style={{ fontWeight: 600, fontSize: 24, margin: 0 }}>Reli AI</h3>
             <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 12, color: 'var(--text2)' }}>Agentic GTM platform · RevSure AI</span>
           </div>
           <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 11, color: 'var(--good)' }}>● In production</span>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: '1.4fr 1fr' }}>
-          <div style={{ padding: 26, borderRight: '1px solid var(--line)', display: 'flex', flexDirection: 'column', gap: 18 }}>
+        <div className="mm-collapse" style={{ display: 'grid', gridTemplateColumns: '1.4fr 1fr' }}>
+          <div className="mm-stack-divider" style={{ padding: 26, borderRight: '1px solid var(--line)', display: 'flex', flexDirection: 'column', gap: 18 }}>
             <div>
               <div style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 10.5, letterSpacing: '.14em', color: 'var(--accent)', marginBottom: 8 }}>PROBLEM</div>
               <p style={{ margin: 0, fontSize: 15, lineHeight: 1.55, color: 'var(--text2)' }}>
@@ -48,14 +48,14 @@ export default function Projects() {
       {/* MedLern */}
       <article className="mm-card reveal" style={{ border: '1px solid var(--line)', borderRadius: 14, overflow: 'hidden', marginBottom: 22 }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '20px 26px', borderBottom: '1px solid var(--line)' }}>
-          <div style={{ display: 'flex', alignItems: 'baseline', gap: 14 }}>
+          <div className="mm-card-head-left" style={{ display: 'flex', alignItems: 'baseline', gap: 14 }}>
             <h3 style={{ fontWeight: 600, fontSize: 24, margin: 0 }}>MedLern</h3>
             <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 12, color: 'var(--text2)' }}>Medical education platform · MedLern</span>
           </div>
           <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 11, color: 'var(--good)' }}>● In production</span>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: '1.4fr 1fr' }}>
-          <div style={{ padding: 26, borderRight: '1px solid var(--line)', display: 'flex', flexDirection: 'column', gap: 18 }}>
+        <div className="mm-collapse" style={{ display: 'grid', gridTemplateColumns: '1.4fr 1fr' }}>
+          <div className="mm-stack-divider" style={{ padding: 26, borderRight: '1px solid var(--line)', display: 'flex', flexDirection: 'column', gap: 18 }}>
             <div>
               <div style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 10.5, letterSpacing: '.14em', color: 'var(--accent)', marginBottom: 8 }}>PROBLEM</div>
               <p style={{ margin: 0, fontSize: 15, lineHeight: 1.55, color: 'var(--text2)' }}>
@@ -81,7 +81,7 @@ export default function Projects() {
       {/* Minerva */}
       <article className="mm-card reveal" style={{ border: '1px solid var(--line)', borderRadius: 14, overflow: 'hidden', marginBottom: 22 }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '20px 26px', borderBottom: '1px solid var(--line)' }}>
-          <div style={{ display: 'flex', alignItems: 'baseline', gap: 14 }}>
+          <div className="mm-card-head-left" style={{ display: 'flex', alignItems: 'baseline', gap: 14 }}>
             <h3 style={{ fontWeight: 600, fontSize: 24, margin: 0 }}>Minerva</h3>
             <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 12, color: 'var(--text2)' }}>AI-native worldbuilding platform</span>
           </div>
@@ -95,14 +95,14 @@ export default function Projects() {
       {/* Agentic AI Council */}
       <article className="mm-card reveal" style={{ border: '1px solid var(--line)', borderRadius: 14, overflow: 'hidden', marginBottom: 22 }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '20px 26px', borderBottom: '1px solid var(--line)' }}>
-          <div style={{ display: 'flex', alignItems: 'baseline', gap: 14 }}>
+          <div className="mm-card-head-left" style={{ display: 'flex', alignItems: 'baseline', gap: 14 }}>
             <h3 style={{ fontWeight: 600, fontSize: 24, margin: 0 }}>Agentic AI Council</h3>
             <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 12, color: 'var(--text2)' }}>Local AI operating environment · Arch Linux</span>
           </div>
           <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 11, color: 'var(--accent)' }}>● Personal R&D</span>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: '1.4fr 1fr' }}>
-          <div style={{ padding: 26, borderRight: '1px solid var(--line)', display: 'flex', flexDirection: 'column', gap: 18 }}>
+        <div className="mm-collapse" style={{ display: 'grid', gridTemplateColumns: '1.4fr 1fr' }}>
+          <div className="mm-stack-divider" style={{ padding: 26, borderRight: '1px solid var(--line)', display: 'flex', flexDirection: 'column', gap: 18 }}>
             <div>
               <div style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 10.5, letterSpacing: '.14em', color: 'var(--accent)', marginBottom: 8 }}>IDEA</div>
               <p style={{ margin: 0, fontSize: 15, lineHeight: 1.55, color: 'var(--text2)' }}>

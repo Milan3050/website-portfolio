@@ -177,7 +177,7 @@ export default function App() {
         onNavigate={scrollToSection}
       />
 
-      <main style={{ maxWidth: 1240, margin: '0 auto', padding: '58px 28px 0', position: 'relative', zIndex: 1 }}>
+      <main className="mm-main" style={{ maxWidth: 1240, margin: '0 auto', padding: '58px 28px 0', position: 'relative', zIndex: 1 }}>
         <Hero onNavigate={scrollToSection} />
         <ImpactStrip />
         <About />

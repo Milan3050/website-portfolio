@@ -44,7 +44,7 @@ export default function ImpactStrip() {
 
   return (
     <section className="reveal" style={{ padding: '44px 0', borderTop: '1px solid var(--line)' }}>
-      <div ref={stripRef} style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 1, background: 'var(--line)', border: '1px solid var(--line)', borderRadius: 12, overflow: 'hidden' }}>
+      <div ref={stripRef} className="mm-impact" style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 1, background: 'var(--line)', border: '1px solid var(--line)', borderRadius: 12, overflow: 'hidden' }}>
         {STATS.map((s, i) => (
           <div key={i} style={{ background: 'var(--bg)', padding: '28px 24px' }}>
             <div

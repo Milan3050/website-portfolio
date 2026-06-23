@@ -86,8 +86,8 @@ export default function AskMilan() {
       {/* Popup */}
       {open && (
         <div style={{
-          position: 'fixed', zIndex: 128, right: 24, bottom: 24,
-          width: 396, height: 580,
+          position: 'fixed', zIndex: 128, right: 'clamp(12px, 4vw, 24px)', bottom: 'clamp(12px, 4vw, 24px)',
+          width: 'min(396px, calc(100vw - 24px))', height: 'min(580px, calc(100vh - 96px))',
           background: 'var(--panel)',
           border: '1px solid var(--line)',
           borderRadius: 16,

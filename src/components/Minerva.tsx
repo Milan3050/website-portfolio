@@ -109,8 +109,8 @@ export default function Minerva() {
             <div style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 12, fontWeight: 500, color: 'var(--accent)' }}>Create once, benefit everywhere</div>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '300px 1fr 250px', minHeight: 380 }}>
-            <div style={{ padding: 24, borderRight: '1px solid var(--line)' }}>
+          <div className="mm-minerva-grid" style={{ display: 'grid', gridTemplateColumns: '300px 1fr 250px', minHeight: 380 }}>
+            <div className="mm-stack-divider" style={{ padding: 24, borderRight: '1px solid var(--line)' }}>
               <div style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 10.5, letterSpacing: '.14em', color: 'var(--text3)', marginBottom: 16 }}>WRITER'S WORKSPACE</div>
               <div style={{ border: `1px solid ${cur.kg.includes('char') ? 'var(--accent)' : 'var(--line2)'}`, borderRadius: 10, padding: 16, background: 'var(--bg)', transition: 'border-color .4s' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 12 }}>
@@ -135,7 +135,7 @@ export default function Minerva() {
               <div style={{ marginTop: 16, fontSize: 13, lineHeight: 1.5, color: 'var(--text2)', minHeight: 60 }}>{cur.hint}</div>
             </div>
 
-            <div style={{ padding: 12, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', borderRight: '1px solid var(--line)', position: 'relative' }}>
+            <div className="mm-stack-divider" style={{ padding: 12, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', borderRight: '1px solid var(--line)', position: 'relative' }}>
               <div style={{ position: 'absolute', top: 16, left: 20, fontFamily: "'JetBrains Mono',monospace", fontSize: 10.5, letterSpacing: '.14em', color: 'var(--text3)' }}>KNOWLEDGE GRAPH</div>
               <svg viewBox="0 0 420 320" style={{ width: '100%', maxWidth: 420, height: 'auto', fontFamily: "'JetBrains Mono',monospace" }}>
                 <line x1="177" y1="138" x2="119" y2="98" stroke="var(--accent)" strokeWidth="1.4" fill="none" style={edgeStyle('loc')} />
@@ -203,7 +203,7 @@ export default function Minerva() {
         </div>
       </div>
 
-      <div style={{ marginTop: 24, display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 16 }}>
+      <div className="mm-3col" style={{ marginTop: 24, display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: 16 }}>
         {[
           { label: 'COLLABORATION', text: 'Teams work in one shared workspace — everyone sees the same canon, in real time.' },
           { label: 'CONTEXT & CONSISTENCY', text: 'A knowledge graph links characters, places, orgs, events and lore — so nothing contradicts.' },

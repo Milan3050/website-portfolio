@@ -15,13 +15,13 @@ export default function About() {
   }, [])
 
   return (
-    <section id="about" style={{ padding: '84px 0', borderTop: '1px solid var(--line)' }}>
+    <section id="about" className="mm-section" style={{ padding: '84px 0', borderTop: '1px solid var(--line)' }}>
       <div style={{ display: 'flex', alignItems: 'baseline', gap: 14, marginBottom: 44 }}>
         <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 12, color: 'var(--accent)' }}>01</span>
         <h2 data-reactive style={{ fontWeight: 600, fontSize: 'clamp(28px,3.4vw,40px)', letterSpacing: '-.02em', margin: 0 }}>About</h2>
         <div style={{ flex: 1, height: 1, background: 'var(--line)' }} />
       </div>
-      <div ref={ref} style={{ display: 'grid', gridTemplateColumns: '1.4fr 1fr', gap: 56 }}>
+      <div ref={ref} className="mm-collapse" style={{ display: 'grid', gridTemplateColumns: '1.4fr 1fr', gap: 56 }}>
         <div className="reveal" style={{ fontSize: 20, lineHeight: 1.62, color: 'var(--text)', maxWidth: 680 }}>
           <p style={{ margin: '0 0 22px' }}>
             I'm a software engineer focused on building <span style={{ color: 'var(--text)', fontWeight: 500 }}>AI-native products</span> and high-impact business systems. Over the last four years I've shipped across React Native, React, Node.js, Python, Golang and cloud platforms — for products used by thousands and enterprise clients across healthcare and SaaS.

@@ -1,6 +1,6 @@
 export default function Experience() {
   return (
-    <section id="experience" style={{ padding: '84px 0', borderTop: '1px solid var(--line)' }}>
+    <section id="experience" className="mm-section" style={{ padding: '84px 0', borderTop: '1px solid var(--line)' }}>
       <div style={{ display: 'flex', alignItems: 'baseline', gap: 14, marginBottom: 44 }}>
         <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 12, color: 'var(--accent)' }}>04</span>
         <h2 data-reactive style={{ fontWeight: 600, fontSize: 'clamp(28px,3.4vw,40px)', letterSpacing: '-.02em', margin: 0 }}>Work Experience</h2>
@@ -8,7 +8,7 @@ export default function Experience() {
       </div>
 
       {/* RevSure AI */}
-      <div className="reveal" style={{ display: 'grid', gridTemplateColumns: '240px 1fr', gap: 40, paddingBottom: 34, marginBottom: 34, borderBottom: '1px solid var(--line)' }}>
+      <div className="reveal mm-exp" style={{ display: 'grid', gridTemplateColumns: '240px 1fr', gap: 40, paddingBottom: 34, marginBottom: 34, borderBottom: '1px solid var(--line)' }}>
         <div>
           <h3 style={{ fontWeight: 600, fontSize: 21, margin: 0 }}>RevSure AI</h3>
           <div style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 12, color: 'var(--text2)', marginTop: 6 }}>Software Engineer</div>
@@ -36,7 +36,7 @@ export default function Experience() {
       </div>
 
       {/* MedLern */}
-      <div className="reveal" style={{ display: 'grid', gridTemplateColumns: '240px 1fr', gap: 40 }}>
+      <div className="reveal mm-exp" style={{ display: 'grid', gridTemplateColumns: '240px 1fr', gap: 40 }}>
         <div>
           <h3 style={{ fontWeight: 600, fontSize: 21, margin: 0 }}>MedLern</h3>
           <div style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 12, color: 'var(--text2)', marginTop: 6 }}>Software Engineer</div>

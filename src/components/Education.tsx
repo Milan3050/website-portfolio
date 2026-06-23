@@ -1,7 +1,7 @@
 export default function Education() {
   return (
-    <section id="education" style={{ padding: '84px 0', borderTop: '1px solid var(--line)' }}>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 28 }}>
+    <section id="education" className="mm-section" style={{ padding: '84px 0', borderTop: '1px solid var(--line)' }}>
+      <div className="mm-2col" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 28 }}>
         {/* Education */}
         <div className="reveal">
           <div style={{ display: 'flex', alignItems: 'baseline', gap: 14, marginBottom: 28 }}>

@@ -53,7 +53,7 @@ export default function Skills({ theme }: Props) {
   }, [theme])
 
   return (
-    <section id="skills" style={{ padding: '84px 0', borderTop: '1px solid var(--line)' }}>
+    <section id="skills" className="mm-section" style={{ padding: '84px 0', borderTop: '1px solid var(--line)' }}>
       <div style={{ display: 'flex', alignItems: 'baseline', gap: 14, marginBottom: 44 }}>
         <span style={{ fontFamily: "'JetBrains Mono',monospace", fontSize: 12, color: 'var(--accent)' }}>05</span>
         <h2 data-reactive style={{ fontWeight: 600, fontSize: 'clamp(28px,3.4vw,40px)', letterSpacing: '-.02em', margin: 0 }}>Skills</h2>
