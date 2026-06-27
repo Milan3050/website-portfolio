@@ -121,7 +121,7 @@ async function handleChat(request: Request, env: Env): Promise<Response> {
         'X-Title': 'Milan M Baburaj Portfolio',
       },
       body: JSON.stringify({
-        model: env.OPENROUTER_MODEL || 'google/gemma-3-27b-it:free',
+        model: env.OPENROUTER_MODEL || 'google/gemma-4-31b-it:free',
         messages: [
           { role: 'system', content: SYSTEM_PROMPT },
           ...(messages as ChatMessage[]),
