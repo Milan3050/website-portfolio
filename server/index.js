@@ -592,7 +592,7 @@ app.post('/api/chat', async (req, res) => {
         'X-Title': 'Milan M Baburaj Portfolio',
       },
       body: JSON.stringify({
-        model: process.env.OPENROUTER_MODEL || 'google/gemma-4-31b-it:free',
+        model: process.env.OPENROUTER_MODEL || 'google/gemma-3-27b-it:free',
         messages: [
           { role: 'system', content: SYSTEM_PROMPT },
           ...messages,

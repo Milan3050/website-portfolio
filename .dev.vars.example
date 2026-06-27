@@ -4,4 +4,4 @@
 OPENROUTER_API_KEY=your_key_here
 
 # Optional — defaults to the free Gemma model
-OPENROUTER_MODEL=google/gemma-4-31b-it:free
+OPENROUTER_MODEL=google/gemma-3-27b-it:free
