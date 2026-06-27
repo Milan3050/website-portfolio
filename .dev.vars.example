@@ -1,0 +1,7 @@
+# Local Worker secrets for `npm run dev` (Cloudflare Vite plugin / wrangler).
+# Copy this file to `.dev.vars` and fill in your key. `.dev.vars` is gitignored.
+
+OPENROUTER_API_KEY=your_key_here
+
+# Optional — defaults to the free Gemma model
+OPENROUTER_MODEL=google/gemma-4-31b-it:free

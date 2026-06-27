@@ -2,6 +2,9 @@ node_modules
 dist
 .env
 *.local
+*.tsbuildinfo
+.directory
+.claude
 
 # wrangler files
 .wrangler
